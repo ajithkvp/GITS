@@ -13,7 +13,8 @@
 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/bhavesh242/GITS)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/bhavesh242/GITS)
-[![Alt text](http://i3.ytimg.com/vi/4dwKZJN52vs/maxresdefault.jpg)](https://www.youtube.com/watch?v=4dwKZJN52vs)
+[![Alt text](http://i3.ytimg.com/vi/XWzKtZcDmKU/maxresdefault.jpg)](https://www.youtube.com/watch?v=XWzKtZcDmKU)
+
 ### Installation Guidelines:
 1. Clone the GITS repository <br/>
 2. Navigate inside GITS folder and enter the following command: <br/> `pip install -r requirements.txt` <br/>
