@@ -24,6 +24,7 @@ from gits_status import gits_status
 from gits_diff import gits_diff
 from gits_sync import gits_sync
 from gits_stats import get_stats
+from gits_tag import gits_tag_func
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -134,6 +135,10 @@ gits_remote_branch_subparser.set_defaults(func=gits_remote_branch_func)
 
 gits_stats_subparser = subparsers.add_parser('stats')
 gits_stats_subparser.set_defaults(func=get_stats)
+
+gits_tag_subparser = subparsers.add_parser('tag', help='Create, list or checkout tags')
+gits_tag_subparser.add_argument("tag_name", action="store_true", help="1. Create a new tag 2.List all stored tags 3.View the state of the repo at a tag using checkout")
+gits_tag_subparser.set_defaults(func=gits_tag_func)
 
 args = parser.parse_args()
 args.func(args)
