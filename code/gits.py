@@ -23,6 +23,7 @@ from gits_pr_update import gits_pr_update_func
 from gits_status import gits_status
 from gits_diff import gits_diff
 from gits_sync import gits_sync
+from gits_stats import get_stats
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -119,8 +120,6 @@ gits_diff_subparser.set_defaults(func=gits_diff)
 gits_sync_subparser=subparsers.add_parser('sync')
 gits_sync_subparser.set_defaults(func=gits_sync)
 
-
-
 gits_init_subparser = subparsers.add_parser('init', help='Initialize local git repository')
 gits_init_subparser.add_argument("--bare", action="store_true", help="Omit the working directory and initialize an empty git repository")
 gits_init_subparser.add_argument("--url", help="url for cloning an already existing repo")
@@ -131,6 +130,10 @@ gits_all_branch_subparser.set_defaults(func=gits_all_branch_func)
 
 gits_remote_branch_subparser = subparsers.add_parser('remote-branch')
 gits_remote_branch_subparser.set_defaults(func=gits_remote_branch_func)
+
+
+gits_stats_subparser = subparsers.add_parser('stats')
+gits_stats_subparser.set_defaults(func=get_stats)
 
 args = parser.parse_args()
 args.func(args)
