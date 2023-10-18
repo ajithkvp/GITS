@@ -24,6 +24,7 @@ from gits_status import gits_status
 from gits_diff import gits_diff
 from gits_sync import gits_sync
 from gits_stats import get_stats
+from gits_commit_tree import gits_commit_tree
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -131,9 +132,11 @@ gits_all_branch_subparser.set_defaults(func=gits_all_branch_func)
 gits_remote_branch_subparser = subparsers.add_parser('remote-branch')
 gits_remote_branch_subparser.set_defaults(func=gits_remote_branch_func)
 
-
 gits_stats_subparser = subparsers.add_parser('stats')
 gits_stats_subparser.set_defaults(func=get_stats)
+
+gits_status_subparser=subparsers.add_parser('commit_tree')
+gits_status_subparser.set_defaults(func=gits_commit_tree)
 
 args = parser.parse_args()
 args.func(args)
