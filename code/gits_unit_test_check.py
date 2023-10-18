@@ -23,6 +23,10 @@ def gits_unit_test_check(args):
             answer = input("The unit test cases failed, do you still wish to commit? Y/N ")
             if answer=='Y':
                 Popen('python3 gits_commit.py')
+            else:
+                print('Commit aborted')
+                return False
+
 
     except Exception as e:
         print("ERROR: gits unit test check caught an exception")
