@@ -135,6 +135,7 @@ gits_remote_branch_subparser.set_defaults(func=gits_remote_branch_func)
 gits_stats_subparser = subparsers.add_parser('stats')
 gits_stats_subparser.set_defaults(func=get_stats)
 
+# new features
 gits_status_subparser=subparsers.add_parser('commit_tree')
 gits_status_subparser.set_defaults(func=gits_commit_tree)
 

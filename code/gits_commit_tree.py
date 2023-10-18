@@ -2,7 +2,8 @@ from subprocess import Popen, PIPE
 
 def gits_commit_tree(args):
 	"""
-	Function to visualize the past commit tree with highlights for each brach.
+	Function to visualize the past commit tree with highlights for each brach. 
+	This feature is usefus in getting the past history of commits and will help user visualize this.
 	"""
 	print("Here is your Commit Tree")
 	try:
