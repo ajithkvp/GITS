@@ -35,7 +35,6 @@ Explain the problem and include additional details to help maintainers reproduce
 ## Enhancement suggestion process / Feature request Process
 
 Bugs are tracked as GitHub issues. You need to create an issue and include all the following details if possible.
-
 1. Use a clear and descriptive title for the issue to identify the suggestion.
 2. Provide a step-by-step description of the suggested enhancement in as many details as possible.
 3. Provide specific examples to demonstrate the steps.
@@ -73,8 +72,15 @@ For enhancement suggestions or feature requests, kindly adhere to the following 
 ### Descriptive Title:
 Utilize a clear and descriptive title for the issue, making the suggestion easily identifiable.
 
-## Style Checker and Analyzer
-We are using flake9 as our style checker and code analyzer. While contrivuting to this project, make sure you conform to norms dictated by flake8
+### Specific Examples:
+Support your suggestion with specific examples that illustrate the proposed steps and outcomes.
+
+### Current Behavior:
+Describe the existing behavior and elucidate why the suggested enhancement is preferable.
+
+### Utility to Users:
+Explain how this enhancement would benefit the majority of users and clarify why it's not suited for implementation as a community package.
+
 ### Flake8 
 <b>Installation</b>
 - `python<version> -m pip install flake8`
@@ -86,3 +92,6 @@ If you want Flake8 to be installed for your default Python installation, you can
  <br/>To start using Flake8, open an interactive shell and run one of the following,
 - `flake8 path/to/code/to/check.py`
 - `flake8 path/to/code/`
+
+## Style Checker and Analyzer
+We are using flake9 as our style checker and code analyzer. While contrivuting to this project, make sure you conform to norms dictated by flake8
