@@ -126,6 +126,9 @@ example output:
 | John Doe <johndoe@email.com> | 42      | 25    | 1200       | 400       | 1600        |
 | Jane Smith <janesmith@email.com> | 31 | 15    | 800        | 300       | 1100        |
 
+#### gits tag
+The 'git tags' command extends the functionality of the 'git tag' command in Git which is used to list all the tags (references to specific points in Git history) in a repository. Tags are typically used to mark important points, such as releases or milestones, in a project's history. Tags are commonly used to provide a human-readable and easily accessible reference to a specific commit.
+
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
 For example if you want to go through all the documentation for all files in code/ directory, do the following: 
