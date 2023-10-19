@@ -88,11 +88,12 @@ extends the functionality of Git by providing a command to view user statistics,
 
 Usage: gits stats
 example output: 
-Email                           Commits         Files           Insertions      Deletions       Total Lines
------                           -------         -----           ----------      ---------       -----------
-John Doe <johndoe@email.com>    42              25              1200            400             1600
-Jane Smith <janesmith@email.com> 31              15              800             300             1100
-...
+| Email                        | Commits | Files | Insertions | Deletions | Total Lines |
+| ---------------------------- | ------- | ----- | ---------- | --------- | ----------- |
+| John Doe <johndoe@email.com> | 42      | 25    | 1200       | 400       | 1600        |
+| Jane Smith <janesmith@email.com> | 31 | 15    | 800        | 300       | 1100        |
+
+
 
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
