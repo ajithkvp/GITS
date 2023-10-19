@@ -51,7 +51,10 @@ Have you ever run into a situation, where you had to clone the repository again 
 Function that adds files as passed to the gits add command. Performs operation as similar to git add command
 
 #### gits commit
-It is a highly simplified version of git commit command. We are actively working on this functionality such that a commit would fail if the unit tests does not pass. We can specify the tests that need to pass before the commit can actually happen. 
+It is a highly simplified version of git commit command. (changes: We have implemented a new functionality - such that a the unit tests are run before any commit.
+
+#### gits commit_with_test
+This is a slightly advanced version of git commit command. This commands checks for the success of the unit test cases, before performing the commit. If all the test cases are passed, the commit will be done successfully. In case of failure of the test cases, this command gives the user a choice to take a call on whether the commit needs to be done or it needs to be aborted.
 
 #### gits create_branch
 This automatically checks out a new branch from local master , after pulling all the changes from the remote master to local master. The idea behind this is that this new branch should have all the latest commits before a developer starts working on them.
@@ -111,7 +114,17 @@ Here is your Commit Tree
 | |\ \ \
 | * | | | "5e3ebf2 dummy "
 * | | | |   "d11a94d Merge pull request #2 from ajithkvp/feature-divya "
+
 ...
+#### gits stats
+extends the functionality of Git by providing a command to view user statistics, including commit count, insertions, and deletions. It parses the Git log and presents the data in a tabular format, making it easy to analyze the contributions of different authors to a Git repository.
+
+Usage: gits stats
+example output: 
+| Email                        | Commits | Files | Insertions | Deletions | Total Lines |
+| ---------------------------- | ------- | ----- | ---------- | --------- | ----------- |
+| John Doe <johndoe@email.com> | 42      | 25    | 1200       | 400       | 1600        |
+| Jane Smith <janesmith@email.com> | 31 | 15    | 800        | 300       | 1100        |
 
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
@@ -138,10 +151,9 @@ If you want Flake8 to be installed for your default Python installation, you can
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
 
-Group 15 Team Members: 
+Project Group 56 Team Members: 
 
-* Steve Victor Menezes
-* Durga Devi Mummadi
-* Bhavesh Shailesh Agrawal
-* Nikitha Thotireddy
-* Aadil Anwar Khan
+* Ajith Kumar V P
+* Priya Krishnamurthy
+* Divya Puranam
+* Reshma Rajashekaraiah
