@@ -88,6 +88,9 @@ This command in Git is used to provide a human-readable name for a specific comm
 
 Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
 
+### gits commit_tree
+This command produces a visual representation of the commit history that makes it easier to understand the branching and merging of different branches in a Git repository. This can be especially useful for complex projects with multiple contributors or when working with feature branches and merges. The graph lines connect commits to show the sequence of commits and how they are related, helping you to visualize the history of your project more clearly.
+
 #### gits stats
 extends the functionality of Git by providing a command to view user statistics, including commit count, insertions, and deletions. It parses the Git log and presents the data in a tabular format, making it easy to analyze the contributions of different authors to a Git repository.
 
@@ -97,8 +100,6 @@ example output:
 | ---------------------------- | ------- | ----- | ---------- | --------- | ----------- |
 | John Doe <johndoe@email.com> | 42      | 25    | 1200       | 400       | 1600        |
 | Jane Smith <janesmith@email.com> | 31 | 15    | 800        | 300       | 1100        |
-
-
 
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
