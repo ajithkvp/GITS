@@ -88,6 +88,31 @@ Note: More functionality are being added to this project. Please refer to the 'i
 ### gits commit_tree
 This command produces a visual representation of the commit history that makes it easier to understand the branching and merging of different branches in a Git repository. This can be especially useful for complex projects with multiple contributors or when working with feature branches and merges. The graph lines connect commits to show the sequence of commits and how they are related, helping you to visualize the history of your project more clearly.
 
+### Example Visualization:
+Here is your Commit Tree
+*   "b858e51 Merge pull request #6 from ajithkvp/feature-avinaya "
+|\
+| * "24e8ef4 modified formating in readme "
+| * "c45c821  added readme for gits stats "
+* |   "51a200d Merge pull request #5 from ajithkvp/feature-priya "
+|\ \
+| * | "de61310 Additional Feature development "
+* | | "25047db Merge pull request #4 from ajithkvp/feature-priya "
+|\| |
+| * |   "6afbbd9 Merge branch 'master' into feature-priya "
+| |\ \
+| |/ /
+|/| |
+* | |   "8274552 Merge pull request #3 from ajithkvp/feature-resh "
+|\ \ \
+| * | | "b2048c3 checknew "
+| * | | "5d432f2 dummy "
+| * | |   "344c618 Merge remote-tracking branch 'refs/remotes/origin/feature-resh' into feature-resh "
+| |\ \ \
+| * | | | "5e3ebf2 dummy "
+* | | | |   "d11a94d Merge pull request #2 from ajithkvp/feature-divya "
+...
+
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
 For example if you want to go through all the documentation for all files in code/ directory, do the following: 
