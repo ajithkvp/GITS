@@ -83,6 +83,17 @@ This command moves files from staging area to the working directory. These untra
 
 Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
 
+#### gits stats
+extends the functionality of Git by providing a command to view user statistics, including commit count, insertions, and deletions. It parses the Git log and presents the data in a tabular format, making it easy to analyze the contributions of different authors to a Git repository.
+
+Usage: gits stats
+example output: 
+| Email                        | Commits | Files | Insertions | Deletions | Total Lines |
+| ---------------------------- | ------- | ----- | ---------- | --------- | ----------- |
+| John Doe <johndoe@email.com> | 42      | 25    | 1200       | 400       | 1600        |
+| Jane Smith <janesmith@email.com> | 31 | 15    | 800        | 300       | 1100        |
+
+
 
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
