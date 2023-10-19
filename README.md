@@ -123,10 +123,9 @@ If you want Flake8 to be installed for your default Python installation, you can
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
 
-Group 15 Team Members: 
+Project Group 56 Team Members: 
 
-* Steve Victor Menezes
-* Durga Devi Mummadi
-* Bhavesh Shailesh Agrawal
-* Nikitha Thotireddy
-* Aadil Anwar Khan
+* Ajith Kumar V P
+* Priya Krishnamurthy
+* Divya Puranam
+* Reshma Rajashekaraiah
