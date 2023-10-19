@@ -15,9 +15,9 @@ def gits_tag_func(args):
 		command_num = int(input(
 		'''
 		Enter the command number that you want to execute:
-		1. gits tag
-		2. gits tag <tag_name>
-		3. gits checkout <tag_name>
+		1. gits tag (List all tags)
+		2. gits tag <tag_name> (Add a new tag)
+		3. gits checkout <tag_name> (Checkout to a particular tag)
 			
         '''))
 		#print(command_num)
@@ -45,27 +45,21 @@ def gits_tag_func(args):
 			subprocess_command.append(tag_name)
 			process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
 			stdout, stderr = process.communicate()
-			print(stdout,stderr)
-			#stderr = stderr.decode()
-			if stderr:	
-				print(stderr)
-				"""
-				final = stdout.split("\n")
-				final = list(filter(None, final)) 
-				for f in final:
-					print(f)
-				"""
+			#print(stdout,stderr)
+			stdout  = stdout.decode("ascii")
+			final = stdout.split("\n")
+			final = list(filter(None, final)) 
+			for f in final:
+				print(f)
 			
-			else:
-				"""
-				stdout = stdout.decode()
-				print(stdout)
-				final = stdout.split("\n")
-				final = list(filter(None, final)) 
-				for f in final:
+			if stderr:
+				stderr  = stderr.decode("ascii")
+				final1 = stderr.split("\n")
+				final1 = list(filter(None, final1)) 
+				for f in final1:
 					print(f)
-				"""
-				print("gits checkout ", tag_name, " executed successfully")
+
+			print("gits checkout ", tag_name, " executed successfully")
 			
 		else:
 			print("Invalid command")			
