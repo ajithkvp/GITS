@@ -73,6 +73,15 @@ For enhancement suggestions or feature requests, kindly adhere to the following 
 ### Descriptive Title:
 Utilize a clear and descriptive title for the issue, making the suggestion easily identifiable.
 
+### Specific Examples:
+Support your suggestion with specific examples that illustrate the proposed steps and outcomes.
+
+### Current Behavior:
+Describe the existing behavior and elucidate why the suggested enhancement is preferable.
+
+### Utility to Users:
+Explain how this enhancement would benefit the majority of users and clarify why it's not suited for implementation as a community package.
+
 ## Style Checker and Analyzer
 We are using flake9 as our style checker and code analyzer. While contrivuting to this project, make sure you conform to norms dictated by flake8
 ### Flake8 
