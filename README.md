@@ -51,7 +51,10 @@ Have you ever run into a situation, where you had to clone the repository again 
 Function that adds files as passed to the gits add command. Performs operation as similar to git add command
 
 #### gits commit
-It is a highly simplified version of git commit command. We are actively working on this functionality such that a commit would fail if the unit tests does not pass. We can specify the tests that need to pass before the commit can actually happen. 
+It is a highly simplified version of git commit command. (changes: We have implemented a new functionality - such that a the unit tests are run before any commit.
+
+#### gits commit_with_test
+This is a slightly advanced version of git commit command. This commands checks for the success of the unit test cases, before performing the commit. If all the test cases are passed, the commit will be done successfully. In case of failure of the test cases, this command gives the user a choice to take a call on whether the commit needs to be done or it needs to be aborted.
 
 #### gits create_branch
 This automatically checks out a new branch from local master , after pulling all the changes from the remote master to local master. The idea behind this is that this new branch should have all the latest commits before a developer starts working on them.
