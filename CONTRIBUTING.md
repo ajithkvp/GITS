@@ -43,7 +43,36 @@ Bugs are tracked as GitHub issues. You need to create an issue and include all t
 5. Explain why this enhancement would be useful to most users and isn't something that can or should be implemented as a community package.
 6. List some other repo or applications where this enhancement / feature exists. ( this is optional )
 
- 
+### Problem Explanation
+Clearly articulate the issue and include additional details that can aid maintainers in reproducing the problem.
+
+### Verify Your Environment:
+Ensure that you are running the latest version of the application and have all recommended OS updates and patches installed before raising a GitHub issue.
+
+### Use a Descriptive Title:
+Employ a clear and descriptive title for the issue, facilitating the identification of the problem.
+
+### Detailed Steps:
+Explicitly describe the exact steps needed to replicate the problem. Include a comprehensive account of the process, from the initial command or action to the observed issue.
+
+### Specific Examples:
+Back your description with specific examples, links to files or GitHub projects, or code snippets that support the problem's reproduction.
+
+### Observed Behavior:
+Explain the behavior you encountered following the specified steps and outline the issue's nature.
+
+### Expected Behavior:
+Clearly state what behavior you anticipated and why it differs from what you observed.
+
+### Visual Aids:
+If possible, include screenshots or animated GIFs that visually depict the issue as you followed the described steps.
+
+### Enhancement Suggestion Process / Feature Request Process:
+For enhancement suggestions or feature requests, kindly adhere to the following guidelines when creating an issue:
+
+### Descriptive Title:
+Utilize a clear and descriptive title for the issue, making the suggestion easily identifiable.
+
 ## Style Checker and Analyzer
 We are using flake9 as our style checker and code analyzer. While contrivuting to this project, make sure you conform to norms dictated by flake8
 ### Flake8 
