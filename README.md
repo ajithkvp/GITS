@@ -101,11 +101,7 @@ This command produces a visual representation of the commit history that makes i
 extends the functionality of Git by providing a command to view user statistics, including commit count, insertions, and deletions. It parses the Git log and presents the data in a tabular format, making it easy to analyze the contributions of different authors to a Git repository.
 
 Usage: gits stats
-example output: 
-| Email                        | Commits | Files | Insertions | Deletions | Total Lines |
-| ---------------------------- | ------- | ----- | ---------- | --------- | ----------- |
-| John Doe <johndoe@email.com> | 42      | 25    | 1200       | 400       | 1600        |
-| Jane Smith <janesmith@email.com> | 31 | 15    | 800        | 300       | 1100        |
+![](Gits_stats.png)
 
 #### gits tag
 The 'gits tag' command extends the functionality of 'git tag' command in Git which is used to list all the tags (references to specific points in Git history) in a repository. Tags are typically used to mark important points, such as releases or milestones, in a project's history. Tags are commonly used to provide a human-readable and easily accessible reference to a specific commit.
