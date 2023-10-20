@@ -1,16 +1,16 @@
 # Cite as ...
 
-Group 15,
-Smart Units Converter,
-September 2020
+Group 56,
+GITS,
+October 2023
 
 ```bibtex
-@article{g15:Project 2,
+@article{g56:Project 2,
 	title 	  = {GITS : Git Tool},
 	DOI 	  = {10.5281/zenodo.4136759},
-	author    = {Group 15},
+	author    = {Group 56},
 	publisher = {Zenodo},
-	year      = {2020},
+	year      = {2023},
 	month     = {October}
 }
 ```
