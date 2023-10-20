@@ -56,6 +56,9 @@ It is a highly simplified version of git commit command. We have implemented a n
 #### gits commit_with_test
 This is a slightly advanced version of git commit command. This commands checks for the success of the unit test cases, before performing the commit. If all the test cases are passed, the commit will be done successfully. In case of failure of the test cases, this command gives the user a choice to take a call on whether the commit needs to be done or it needs to be aborted.
 
+Example:
+![Alt text](Gits_commit_with_test.png)
+
 #### gits create_branch
 This automatically checks out a new branch from local master , after pulling all the changes from the remote master to local master. The idea behind this is that this new branch should have all the latest commits before a developer starts working on them.
 
