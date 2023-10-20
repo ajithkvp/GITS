@@ -110,6 +110,9 @@ The 'gits tag' command extends the functionality of 'git tag' command in Git whi
 #### gits tag <tag_name>
 The gits tag <tag_name> command is used to create a new tag with a specific name at the current commit in a Git repository. This allows you to mark a significant point in your project's history, such as a software release or a specific version. Tags are lightweight and do not move as you make new commits.
 
+#### gits checkout <tag_name>
+The gits checkout <tag_name> command is used to switch the Git repository to a specific tagged commit. This means that it moves your working directory and HEAD (current branch) to the commit associated with the specified tag. It's a way to work on a specific version of your project, effectively creating a detached HEAD state. This is useful for inspecting, testing, or making changes related to a particular release or point in your project's history without affecting the current branch.
+
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
 For example if you want to go through all the documentation for all files in code/ directory, do the following: 
