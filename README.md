@@ -101,11 +101,7 @@ This command produces a visual representation of the commit history that makes i
 extends the functionality of Git by providing a command to view user statistics, including commit count, insertions, and deletions. It parses the Git log and presents the data in a tabular format, making it easy to analyze the contributions of different authors to a Git repository.
 
 Usage: gits stats
-example output: 
-| Email                        | Commits | Files | Insertions | Deletions | Total Lines |
-| ---------------------------- | ------- | ----- | ---------- | --------- | ----------- |
-| John Doe <johndoe@email.com> | 42      | 25    | 1200       | 400       | 1600        |
-| Jane Smith <janesmith@email.com> | 31 | 15    | 800        | 300       | 1100        |
+![](Gits_stats.png)
 
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
