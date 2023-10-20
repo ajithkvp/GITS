@@ -107,6 +107,9 @@ example output:
 #### gits tag
 The 'gits tag' command extends the functionality of 'git tag' command in Git which is used to list all the tags (references to specific points in Git history) in a repository. Tags are typically used to mark important points, such as releases or milestones, in a project's history. Tags are commonly used to provide a human-readable and easily accessible reference to a specific commit.
 
+#### gits tag <tag_name>
+The gits tag <tag_name> command is used to create a new tag with a specific name at the current commit in a Git repository. This allows you to mark a significant point in your project's history, such as a software release or a specific version. Tags are lightweight and do not move as you make new commits.
+
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
 For example if you want to go through all the documentation for all files in code/ directory, do the following: 
