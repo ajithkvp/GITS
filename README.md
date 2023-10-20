@@ -86,12 +86,10 @@ This command switches between two branches. The function takes branch name as in
 #### gits unstage
 This command moves files from staging area to the working directory. These untracked files will not be considered for the upcoming commits. The function filenames as input to move from staging area to working directory and returns True for successful execution or False with an exception.
 
-### gits describe
+#### gits describe
 This command in Git is used to provide a human-readable name for a specific commit. It's often used to get a descriptive label for a commit, such as a version number or release name. This can be helpful for identifying and communicating the state of a particular commit in your Git repository.
 
-Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
-
-### gits commit_tree
+#### gits commit_tree
 This command produces a visual representation of the commit history that makes it easier to understand the branching and merging of different branches in a Git repository. This can be especially useful for complex projects with multiple contributors or when working with feature branches and merges. The graph lines connect commits to show the sequence of commits and how they are related, helping you to visualize the history of your project more clearly.
 
 ### Example Visualization:
@@ -130,6 +128,8 @@ For example if you want to go through all the documentation for all files in cod
 `python3 -m pydoc -b `
 
 This will open up a browser and you can see all the files. You can click on a particular file to access the documentation associated with that file.
+
+Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
 
 ## Style Checker and Analyzer
 We are using flake9 as our style checker and code analyzer. While contrivuting to this project, make sure you conform to norms dictated by flake8
