@@ -118,6 +118,10 @@ Example:
 #### gits checkout <tag_name>
 The gits checkout <tag_name> command is used to switch the Git repository to a specific tagged commit. This means that it moves your working directory and HEAD (current branch) to the commit associated with the specified tag. It's a way to work on a specific version of your project, effectively creating a detached HEAD state. This is useful for inspecting, testing, or making changes related to a particular release or point in your project's history without affecting the current branch.
 
+Example:
+
+![image](https://github.com/ajithkvp/GITS/assets/69590799/527a7547-0d41-4c4f-9f6c-125f653a5927)
+
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
 For example if you want to go through all the documentation for all files in code/ directory, do the following: 
